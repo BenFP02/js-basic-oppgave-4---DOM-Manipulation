@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -22,6 +25,20 @@ body {
   100% {
     transform: translateY(100vh);
   }
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20svw;
+  height: 5svh;
+  background-color: red;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+  background-color: green;
+  transform: scale(1.1);
 }
 
 #walletShaker {
